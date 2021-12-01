@@ -48,6 +48,11 @@ The rental object JSON in the response should have the following structure:
     "country": "string",
     "lat": "decimal",
     "lng": "decimal"
+  },
+  "user": {
+    "id": "int",
+    "first_name": "string",
+    "last_name": "string"
   }
 }
 ```
