@@ -58,7 +58,7 @@ The rental object JSON in the response should have the following structure:
 ```
 
 ## Notes
-- Running `docker-compose up` will automatically generate a database and some data to work with. Connect and use this database.
+- Running `docker-compose up` will automatically generate a postgres database and some data to work with. Connect and use this database.
 - Write production ready code.
 - Please make frequent, and descriptive git commits.
 - Use third-party libraries or not; your choice.
