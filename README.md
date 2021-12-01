@@ -5,17 +5,25 @@ Thanks for applying for a backend role at Outdoorsy. We've put together this cod
 ## Functionality
 The task is to develop a rentals JSON API that returns a list of campervans that can be filtered, sorted, and paginated. We have included files to create a database of rentals.
 
-Your application should support the following endpoints and query parameters in any combination or order.
+Your application should support the following endpoints.
 
-- `rentals`
-    - `rentals?price[min]=9000&price[max]=75000`
-    - `rentals?page[limit]=3&page[offset]=6`
-    - `rentals?ids=3,4,5`
-    - `rentals?near=33.64,-117.93` // within 100 miles
-    - `rentals?sort=price`
-    - `rentals?near=33.64,-117.93&price[min]=9000&price[max]=75000&page[limit]=3&page[offset]=6&sort=price`
-- `rentals/<RENTAL_ID>`
-
+- `/rentals/<RENTAL_ID>` Read one rental endpoint
+- `/rentals` Read many (list) rentals endpoint
+    - Supported query parameters
+        - price_min (number)
+        - price_max (number)
+        - limit (number)
+        - offset (number)
+        - ids (comma separated list of rental ids)
+        - near (comma separated pair [lat,lng])
+        - sort (string)
+    - Examples:
+        - `rentals?price_min=9000&price_max=75000`
+        - `rentals?limit=3&offset=6`
+        - `rentals?ids=3,4,5`
+        - `rentals?near=33.64,-117.93` // within 100 miles
+        - `rentals?sort=price`
+        - `rentals?near=33.64,-117.93&price_min=9000&price_max=75000&limit=3&offset=6&sort=price`
 
 ## Notes
 - Running `docker-compose up` will automatically generate a database and some data to work with. Connect and use this database.
