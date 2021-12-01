@@ -71,6 +71,6 @@ The rental object JSON in the response should have the following structure:
 - An ability to think through all potential states
 - In the README of the project, describe exactly how to run the application and execute the tests
 
-When complete, please push your code to Github and send the link to the project or zip the project (including the `.git` directory) and send it back.
+When complete, please push your code to Github to your own account and send the link to the project or zip the project (including the `.git` directory) and send it back.
 
 Thank you and please ask if you have any questions!
